@@ -17,18 +17,17 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 lg:px-8">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-16 leading-tight tracking-normal">
-          Your Trusted Partner in{' '}
-          <span className="text-accent-blue">Real Estate Management</span>
-          {' '}& Investment Strategies
+          WMP Management Services Ltd
+          <span className="block text-accent-blue">Property management enquiries</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-200 mb-20 max-w-4xl mx-auto leading-relaxed font-light">
-          Specializing in global property management and strategic investment guidance for UK and international clients
+          Enquiries made through this website are referred to our associated company in Indonesia, which provides property management services directly.
         </p>
         <a
-          href="#services"
+          href="#contact"
           className="inline-flex items-center bg-accent-blue hover:bg-accent-blue-dark text-white px-10 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover-lift"
         >
-          Discover Our Solutions
+          Make an enquiry
           <ArrowRight className="ml-3" size={20} />
         </a>
       </div>

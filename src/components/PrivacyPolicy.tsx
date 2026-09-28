@@ -13,51 +13,62 @@ const PrivacyPolicy = () => {
 
         <div className="space-y-8">
           <section>
-            <h3 className="text-xl font-medium text-primary mb-4">Information We Collect</h3>
+            <h3 className="text-xl font-medium text-primary mb-4">Data Controller</h3>
             <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>Personal details you provide (name, email, contact information).</p>
-              <p>Technical data collected automatically (IP, browser type, analytics cookies).</p>
-              <p>Payment info processed via Stripe.</p>
-            </div>
-          </section>
-
-          <section>
-            <h3 className="text-xl font-medium text-primary mb-4">How We Use Your Information</h3>
-            <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>To provide and improve services.</p>
-              <p>To comply with legal obligations.</p>
-              <p>To monitor website performance.</p>
-            </div>
-          </section>
-
-          <section>
-            <h3 className="text-xl font-medium text-primary mb-4">Sharing Your Information</h3>
-            <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>We do not sell personal data.</p>
-              <p>Shared only with trusted service providers (Stripe, Google Analytics, AWS, Supabase, DigitalOcean, Cloud66).</p>
-            </div>
-          </section>
-
-          <section>
-            <h3 className="text-xl font-medium text-primary mb-4">Your Rights</h3>
-            <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>Access, correct, delete personal data.</p>
-              <p>Object to processing or withdraw consent anytime.</p>
+              <p>WMP Management Services Ltd is the data controller. Company No. 14363395. Registered office: 128 City Road, London, EC1V 2NX.</p>
               <p>Contact us at <a href="mailto:info@wmp.ltd" className="text-accent-blue hover:text-accent-blue-dark">info@wmp.ltd</a>.</p>
             </div>
           </section>
 
           <section>
+            <h3 className="text-xl font-medium text-primary mb-4">Information We Collect</h3>
+            <p className="text-secondary font-light leading-relaxed">
+              Name, email address, and message submitted through the enquiry form. This website does not collect analytics data.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-medium text-primary mb-4">How We Use Your Information</h3>
+            <p className="text-secondary font-light leading-relaxed">
+              To respond to your enquiry by passing it to our associated company in Indonesia.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-medium text-primary mb-4">Sharing Your Information</h3>
+            <div className="space-y-3 text-secondary font-light leading-relaxed">
+              <p>Enquiry details are shared with our associated company in Indonesia, which is outside the UK.</p>
+              <p>The enquiry form is sent through EmailJS, which processes the submission so it can be delivered. We do not use analytics providers.</p>
+            </div>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-medium text-primary mb-4">Legal Basis</h3>
+            <p className="text-secondary font-light leading-relaxed">
+              We process this information because you asked us to pass on your enquiry, and on the basis of our legitimate interests in handling that request.
+            </p>
+          </section>
+
+          <section>
             <h3 className="text-xl font-medium text-primary mb-4">Data Retention</h3>
             <p className="text-secondary font-light leading-relaxed">
-              Stored only as long as necessary for legal or operational purposes.
+              Enquiries are kept for up to 12 months.
             </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-medium text-primary mb-4">Your Rights</h3>
+            <div className="space-y-3 text-secondary font-light leading-relaxed">
+              <p>You can ask to access, correct, or delete your personal data, and you can object to processing.</p>
+              <p>You can complain to the Information Commissioner’s Office at <a href="https://ico.org.uk" className="text-accent-blue hover:text-accent-blue-dark">ico.org.uk</a>.</p>
+              <p>Contact us at <a href="mailto:info@wmp.ltd" className="text-accent-blue hover:text-accent-blue-dark">info@wmp.ltd</a>.</p>
+            </div>
           </section>
 
           <section>
             <h3 className="text-xl font-medium text-primary mb-4">Cookies</h3>
             <p className="text-secondary font-light leading-relaxed">
-              Essential and non-essential cookies used; see our <a href="/cookie-policy" className="text-accent-blue hover:text-accent-blue-dark">Cookie Policy</a>.
+              See our <a href="/cookie-policy" className="text-accent-blue hover:text-accent-blue-dark">Cookie Policy</a>.
             </p>
           </section>
         </div>

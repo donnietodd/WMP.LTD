@@ -8,28 +8,24 @@ const Compliance = () => {
           Compliance and Legal Disclaimer – WMP Management Services Ltd
         </h1>
         <h2 className="text-2xl font-medium text-accent-blue mb-12">
-          Advisory Services Only
+          Company Information
         </h2>
 
         <div className="space-y-6 text-secondary font-light leading-relaxed">
           <p>
-            WMP Management Services Ltd provides advisory services on real estate, property strategy, and digital projects.
+            WMP Management Services Ltd is a private limited company registered in England and Wales (Company No. 14363395). Registered office: 128 City Road, London, EC1V 2NX.
           </p>
-          
+
           <p>
-            We do not provide regulated financial, investment, or tax advice.
+            WMP Management Services Ltd does not provide services to clients, does not accept payments, and does not hold or manage funds or assets on behalf of any third party.
           </p>
-          
+
           <p>
-            Guidance is for informational purposes only; consult a licensed professional for financial matters.
+            Enquiries submitted through this website are referred to our associated company in Indonesia, which provides property management services directly and independently.
           </p>
-          
+
           <p>
-            Services are for clients in the UK and internationally.
-          </p>
-          
-          <p>
-            WMP Management Services Ltd is not liable for actions taken based on information on this website.
+            WMP Management Services Ltd is not authorised to provide regulated financial services, and nothing on this website constitutes financial, investment or tax advice.
           </p>
         </div>
       </div>

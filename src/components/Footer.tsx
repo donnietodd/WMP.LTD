@@ -1,11 +1,11 @@
 import React from 'react';
-import { Linkedin, Twitter, Mail, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-accent-charcoal text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="mb-4">
@@ -16,16 +16,9 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed text-sm font-light">
-              Leading real estate management and investment strategy firm serving clients in the UK and internationally. 
-              Your trusted partner for property management and strategic investment guidance.
+              Property management enquiries are referred to our associated company in Indonesia.
             </p>
             <div className="flex space-x-3">
-              <a href="https://linkedin.com" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="https://twitter.com" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Twitter size={20} />
-              </a>
               <a href="mailto:info@wmp.ltd" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Mail size={20} />
               </a>
@@ -33,17 +26,6 @@ const Footer = () => {
                 <Phone size={20} />
               </a>
             </div>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="text-base font-medium mb-3">Services</h4>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li><a href="#services" className="hover:text-blue-400 transition-colors">Property Management</a></li>
-              <li><a href="#services" className="hover:text-blue-400 transition-colors">Investment Strategies</a></li>
-              <li><a href="#services" className="hover:text-blue-400 transition-colors">Digital Projects</a></li>
-              <li><a href="#services" className="hover:text-blue-400 transition-colors">Overseas Expansion</a></li>
-            </ul>
           </div>
 
           {/* Legal */}
@@ -62,10 +44,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-xs">
-                © 2025 WMP Management Services Ltd. All rights reserved.
-              </p>
-              <p className="text-gray-400 text-xs mt-1">
-                Company Number: 14363395
+                © 2026 WMP Management Services Ltd. Registered in England and Wales, Company No. 14363395. Registered office: 128 City Road, London, EC1V 2NX.
               </p>
             </div>
             <p className="text-gray-400 text-xs mt-2 md:mt-0 text-center md:text-right">

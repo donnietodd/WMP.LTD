@@ -9,13 +9,7 @@ const Header = () => {
 
   // Search content data
   const searchableContent = [
-    { title: 'Property Management', content: 'property management UK abroad residential commercial tenant screening rent collection maintenance', section: 'services', id: 'services' },
-    { title: 'Investment Strategies', content: 'real estate investment strategies market analysis risk assessment portfolio diversification ROI optimization', section: 'services', id: 'services' },
-    { title: 'Digital Projects Advisory', content: 'digital projects PropTech integration smart building solutions technology assessment digital transformation', section: 'services', id: 'services' },
-    { title: 'Overseas Property Expansion', content: 'overseas property expansion international investment market research legal framework tax optimization', section: 'services', id: 'services' },
-    { title: 'About WMP Management', content: 'WMP Management Services real estate management investment strategies UK international global reach expertise', section: 'about', id: 'about' },
-    { title: 'Digital Innovation', content: 'digital innovation PropTech data analytics investment modeling automation cloud infrastructure cybersecurity', section: 'digital projects', id: 'digital-projects' },
-    { title: 'Contact Information', content: 'contact information email phone office address business hours London UK', section: 'contact', id: 'contact' },
+    { title: 'Contact Information', content: 'contact information email phone office address business hours London UK enquiry', section: 'contact', id: 'contact' },
   ];
 
   const handleSearch = (query) => {
@@ -67,15 +61,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-12">
-            <a href="#about" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
-              About Us
-            </a>
-            <a href="#services" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
-              Services
-            </a>
-            <a href="#digital-projects" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
-              Digital Projects
-            </a>
             <a href="#contact" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
               Contact
             </a>
@@ -150,15 +135,6 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-6 border-t border-neutral-100">
             <div className="flex flex-col space-y-6">
-              <a href="#about" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
-                About Us
-              </a>
-              <a href="#services" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
-                Services
-              </a>
-              <a href="#digital-projects" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
-                Digital Projects
-              </a>
               <a href="#contact" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
                 Contact
               </a>

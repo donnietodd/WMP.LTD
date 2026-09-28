@@ -13,31 +13,22 @@ const TermsOfService = () => {
 
         <div className="space-y-8">
           <section>
-            <h3 className="text-xl font-medium text-primary mb-4">1. Use of Services</h3>
+            <h3 className="text-xl font-medium text-primary mb-4">1. This Website</h3>
             <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>Advisory services only; no regulated financial advice.</p>
-              <p>Do not misuse website or services.</p>
+              <p>This website provides general information about WMP Management Services Ltd and a form for submitting enquiries.</p>
+              <p>Enquiries are passed to our associated company in Indonesia. Any services are agreed directly with that company, not with WMP Management Services Ltd.</p>
             </div>
           </section>
 
           <section>
-            <h3 className="text-xl font-medium text-primary mb-4">2. Accounts and Access</h3>
-            <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>Maintain account security.</p>
-              <p>Do not share login credentials.</p>
-            </div>
+            <h3 className="text-xl font-medium text-primary mb-4">2. Acceptable Use</h3>
+            <p className="text-secondary font-light leading-relaxed">
+              Do not misuse this website, attempt to disrupt it, or use it to send unlawful, misleading, or harmful material.
+            </p>
           </section>
 
           <section>
-            <h3 className="text-xl font-medium text-primary mb-4">3. Payment & Subscriptions</h3>
-            <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>Processed via Stripe; subject to Stripe's terms.</p>
-              <p>Refunds at our discretion.</p>
-            </div>
-          </section>
-
-          <section>
-            <h3 className="text-xl font-medium text-primary mb-4">4. Intellectual Property</h3>
+            <h3 className="text-xl font-medium text-primary mb-4">3. Intellectual Property</h3>
             <div className="space-y-3 text-secondary font-light leading-relaxed">
               <p>Content and branding are owned by WMP Management Services Ltd.</p>
               <p>No copying, distributing, or reusing without permission.</p>
@@ -45,16 +36,23 @@ const TermsOfService = () => {
           </section>
 
           <section>
-            <h3 className="text-xl font-medium text-primary mb-4">5. Liability</h3>
+            <h3 className="text-xl font-medium text-primary mb-4">4. Liability</h3>
             <p className="text-secondary font-light leading-relaxed">
-              Advisory services only; we are not liable for losses from reliance.
+              WMP Management Services Ltd is not liable for losses from reliance on the content of this website.
             </p>
           </section>
 
           <section>
-            <h3 className="text-xl font-medium text-primary mb-4">6. Changes to Terms</h3>
+            <h3 className="text-xl font-medium text-primary mb-4">5. Governing Law</h3>
             <p className="text-secondary font-light leading-relaxed">
-              Terms may be updated at any time; review periodically.
+              These terms are governed by the law of England and Wales.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-medium text-primary mb-4">6. Contact</h3>
+            <p className="text-secondary font-light leading-relaxed">
+              Contact us at <a href="mailto:info@wmp.ltd" className="text-accent-blue hover:text-accent-blue-dark">info@wmp.ltd</a>.
             </p>
           </section>
         </div>

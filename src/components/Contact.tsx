@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Mail, Phone, MapPin, Send, Clock, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Clock } from 'lucide-react';
 
 const Contact = () => {
   const form = useRef();
@@ -100,13 +100,9 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-light text-primary mb-6">
             Get in Touch
           </h2>
-          <p className="text-lg text-secondary max-w-3xl mx-auto mb-8 font-light">
-            Ready to elevate your real estate portfolio? Contact our expert team to discuss your property management and investment needs.
+          <p className="text-lg text-secondary max-w-3xl mx-auto font-light">
+            Send an enquiry and it will be forwarded to our associated company in Indonesia, who will contact you directly.
           </p>
-          <div className="bg-accent-blue hover:bg-accent-blue-dark text-white px-8 py-3 rounded-lg text-base font-medium transition-colors inline-flex items-center cursor-pointer hover-lift">
-            Start Your Journey
-            <Send className="ml-2" size={18} />
-          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -163,15 +159,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="bg-white p-3 rounded-lg hover-lift">
-                  <Globe className="text-accent-blue" size={24} />
-                </div>
-                <div>
-                  <h4 className="font-medium text-primary mb-1 text-sm">Global Presence</h4>
-                  <p className="text-secondary font-light text-sm">Serving clients worldwide</p>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -271,20 +258,6 @@ const Contact = () => {
 
               <div>
                 <label className="block text-xs font-medium text-primary mb-2">
-                  Service Interest
-                </label>
-                <select name="service_interest" className="w-full px-3 py-3 border border-neutral-100 rounded-lg focus:ring-2 focus:ring-accent-blue focus:ring-opacity-20 focus:border-accent-blue outline-none transition-all font-light text-sm">
-                  <option>Select a service</option>
-                  <option>Property Management</option>
-                  <option>Investment Strategies</option>
-                  <option>Digital Projects Advisory</option>
-                  <option>Overseas Expansion</option>
-                  <option>General Inquiry</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs font-medium text-primary mb-2">
                   Message
                 </label>
                 <textarea
@@ -312,6 +285,9 @@ const Contact = () => {
                   placeholder="Enter the answer"
                 />
               </div>
+              <p className="text-secondary font-light text-sm leading-relaxed">
+                WMP Management Services Ltd does not provide services or accept payments. Your enquiry will be shared with our associated company in Indonesia.
+              </p>
               <button
                 type="submit"
                 disabled={isSubmitting}
