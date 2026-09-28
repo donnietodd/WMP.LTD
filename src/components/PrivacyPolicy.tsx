@@ -30,14 +30,14 @@ const PrivacyPolicy = () => {
           <section>
             <h3 className="text-xl font-medium text-primary mb-4">How We Use Your Information</h3>
             <p className="text-secondary font-light leading-relaxed">
-              To respond to your enquiry by passing it to our associated company in Indonesia.
+              To respond to your enquiry. Enquiries about UK property are handled by WMP; enquiries about property in Indonesia are shared with our associated company in Indonesia, which is outside the UK.
             </p>
           </section>
 
           <section>
             <h3 className="text-xl font-medium text-primary mb-4">Sharing Your Information</h3>
             <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>Enquiry details are shared with our associated company in Indonesia, which is outside the UK.</p>
+              <p>Enquiries about property in Indonesia are shared with our associated company in Indonesia, which is outside the UK. Enquiries about UK property are not shared with it.</p>
               <p>The enquiry form is sent through EmailJS, which processes the submission so it can be delivered. We do not use analytics providers.</p>
             </div>
           </section>

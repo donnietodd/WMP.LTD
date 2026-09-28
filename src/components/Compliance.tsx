@@ -17,11 +17,7 @@ const Compliance = () => {
           </p>
 
           <p>
-            WMP Management Services Ltd does not provide services to clients, does not accept payments, and does not hold or manage funds or assets on behalf of any third party.
-          </p>
-
-          <p>
-            Enquiries submitted through this website are referred to our associated company in Indonesia, which provides property management services directly and independently.
+            WMP Management Services Ltd provides property management services in the UK. It does not accept, hold or manage funds or investments on behalf of any third party. Enquiries about property in Indonesia are referred to our associated company there.
           </p>
 
           <p>

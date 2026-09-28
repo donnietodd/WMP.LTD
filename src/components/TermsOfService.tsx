@@ -15,8 +15,7 @@ const TermsOfService = () => {
           <section>
             <h3 className="text-xl font-medium text-primary mb-4">1. This Website</h3>
             <div className="space-y-3 text-secondary font-light leading-relaxed">
-              <p>This website provides general information about WMP Management Services Ltd and a form for submitting enquiries.</p>
-              <p>Enquiries are passed to our associated company in Indonesia. Any services are agreed directly with that company, not with WMP Management Services Ltd.</p>
+              <p>This website provides information about WMP Management Services Ltd and a form for enquiries. UK property management services are provided by WMP under separate written agreement. Enquiries about property in Indonesia are passed to our associated company there, and any services are agreed directly with that company.</p>
             </div>
           </section>
 

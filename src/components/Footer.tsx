@@ -16,7 +16,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed text-sm font-light">
-              Property management enquiries are referred to our associated company in Indonesia.
+              Property management for landlords and property owners in the UK.
             </p>
             <div className="flex space-x-3">
               <a href="mailto:info@wmp.ltd" className="text-gray-400 hover:text-blue-400 transition-colors">

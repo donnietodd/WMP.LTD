@@ -18,10 +18,10 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 lg:px-8">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-16 leading-tight tracking-normal">
           WMP Management Services Ltd
-          <span className="block text-accent-blue">Property management enquiries</span>
+          <span className="block text-accent-blue">Property management</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-200 mb-20 max-w-4xl mx-auto leading-relaxed font-light">
-          Enquiries made through this website are referred to our associated company in Indonesia, which provides property management services directly.
+          Professional property management for landlords and property owners across the UK.
         </p>
         <a
           href="#contact"

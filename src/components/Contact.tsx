@@ -8,6 +8,7 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState('');
   const [lastSubmitTime, setLastSubmitTime] = useState(0);
   const [submitCount, setSubmitCount] = useState(0);
+  const [enquiryType, setEnquiryType] = useState('');
 
   // Simple math captcha
   const [captcha, setCaptcha] = useState({ num1: 0, num2: 0, answer: '' });
@@ -22,6 +23,19 @@ const Contact = () => {
   // Initialize captcha on component mount
   React.useEffect(() => {
     generateCaptcha();
+  }, []);
+
+  React.useEffect(() => {
+    const onSelectEnquiry = (event: Event) => {
+      const detail = (event as CustomEvent<string>).detail;
+      if (detail === 'UK property management' || detail === 'Property in Indonesia') {
+        setEnquiryType(detail);
+      }
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    window.addEventListener('wmp-select-enquiry', onSelectEnquiry);
+    return () => window.removeEventListener('wmp-select-enquiry', onSelectEnquiry);
   }, []);
   const sendEmail = (e) => {
     e.preventDefault();
@@ -66,6 +80,10 @@ const Contact = () => {
     }
     setSubmitStatus('');
 
+    const messageInput = form.current.elements.message;
+    const originalMessage = messageInput.value;
+    messageInput.value = `Enquiry type: ${form.current.elements.enquiry_type.value}\n\n${originalMessage}`;
+
     // For now, simulate successful form submission
     // EmailJS configuration - replace YOUR_TEMPLATE_ID and YOUR_PUBLIC_KEY with actual values
     emailjs.sendForm(
@@ -81,9 +99,11 @@ const Contact = () => {
       setLastSubmitTime(now);
       setSubmitCount(prev => prev + 1);
       form.current.reset();
+      setEnquiryType('');
       generateCaptcha();
     }, (error) => {
       console.log('Email send failed:', error.text);
+      messageInput.value = originalMessage;
       setSubmitStatus('error');
       setIsSubmitting(false);
     });
@@ -101,7 +121,7 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-lg text-secondary max-w-3xl mx-auto font-light">
-            Send an enquiry and it will be forwarded to our associated company in Indonesia, who will contact you directly.
+            Tell us about your property and we'll be in touch.
           </p>
         </div>
 
@@ -257,6 +277,24 @@ const Contact = () => {
               </div>
 
               <div>
+                <label className="block text-xs font-medium text-primary mb-2" htmlFor="enquiry-type">
+                  Enquiry
+                </label>
+                <select
+                  id="enquiry-type"
+                  name="enquiry_type"
+                  required
+                  value={enquiryType}
+                  onChange={(e) => setEnquiryType(e.target.value)}
+                  className="w-full px-3 py-3 border border-neutral-100 rounded-lg focus:ring-2 focus:ring-accent-blue focus:ring-opacity-20 focus:border-accent-blue outline-none transition-all font-light text-sm"
+                >
+                  <option value="">Select an option</option>
+                  <option value="UK property management">UK property management</option>
+                  <option value="Property in Indonesia">Property in Indonesia</option>
+                </select>
+              </div>
+
+              <div>
                 <label className="block text-xs font-medium text-primary mb-2">
                   Message
                 </label>
@@ -286,7 +324,7 @@ const Contact = () => {
                 />
               </div>
               <p className="text-secondary font-light text-sm leading-relaxed">
-                WMP Management Services Ltd does not provide services or accept payments. Your enquiry will be shared with our associated company in Indonesia.
+                WMP does not accept payments or hold funds on behalf of anyone. Enquiries about Indonesian property will be shared with our associated company in Indonesia.
               </p>
               <button
                 type="submit"
