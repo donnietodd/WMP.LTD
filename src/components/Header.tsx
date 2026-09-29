@@ -9,7 +9,10 @@ const Header = () => {
 
   // Search content data
   const searchableContent = [
-    { title: 'Contact Information', content: 'contact information email phone office address business hours London UK enquiry', section: 'contact', id: 'contact' },
+    { title: 'UK property', content: 'UK property management landlords property owners', section: 'home', id: 'top' },
+    { title: 'FAQ', content: 'frequently asked questions UK property Indonesia payments', section: 'faq', id: 'faq' },
+    { title: 'Overseas', content: 'property overseas Indonesia associated company', section: 'overseas', id: 'overseas' },
+    { title: 'Contact', content: 'contact information email phone office address business hours London UK enquiry', section: 'contact', id: 'contact' },
   ];
 
   const handleSearch = (query) => {
@@ -46,11 +49,11 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-neutral-100 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-18">
+        <div className="relative flex items-center h-20">
       
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center justify-center h-full pt-2">
-            <a href="/" className="flex items-center justify-center">
+          <div className="flex-shrink-0 flex items-center">
+            <a href="/" className="flex items-center">
               <img 
                 src="/Vector Smart Object.svg" 
                 alt="WMP Management Services Ltd" 
@@ -60,14 +63,23 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-12">
-            <a href="#contact" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8 absolute left-1/2 -translate-x-1/2">
+            <a href="/#top" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300 whitespace-nowrap">
+              UK property
+            </a>
+            <a href="/#overseas" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300 whitespace-nowrap">
+              Overseas
+            </a>
+            <a href="/#faq" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300 whitespace-nowrap">
+              FAQ
+            </a>
+            <a href="/#contact" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300 whitespace-nowrap">
               Contact
             </a>
           </nav>
 
           {/* Right side items */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-6 ml-auto">
             <div className="flex items-center space-x-6">
               <a href="tel:+447930087654" className="text-muted hover:text-accent-blue transition-colors duration-300">
                 <Phone size={20} />
@@ -86,7 +98,7 @@ const Header = () => {
                   onChange={(e) => handleSearch(e.target.value)}
                   onFocus={() => searchQuery.length >= 2 && setShowSearchResults(true)}
                   onBlur={() => setTimeout(() => setShowSearchResults(false), 200)}
-                  className="bg-transparent outline-none text-sm text-primary placeholder-muted w-40"
+                  className="bg-transparent outline-none text-sm text-primary placeholder-muted w-28 xl:w-40"
                 />
               </div>
               
@@ -121,7 +133,7 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden ml-auto">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-secondary hover:text-accent-blue transition-colors duration-300"
@@ -133,9 +145,18 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-6 border-t border-neutral-100">
+          <div className="lg:hidden py-6 border-t border-neutral-100">
             <div className="flex flex-col space-y-6">
-              <a href="#contact" className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
+              <a href="/#top" onClick={() => setIsMenuOpen(false)} className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
+                UK property
+              </a>
+              <a href="/#overseas" onClick={() => setIsMenuOpen(false)} className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
+                Overseas
+              </a>
+              <a href="/#faq" onClick={() => setIsMenuOpen(false)} className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
+                FAQ
+              </a>
+              <a href="/#contact" onClick={() => setIsMenuOpen(false)} className="text-secondary hover:text-accent-blue font-normal transition-colors duration-300">
                 Contact
               </a>
               <div className="flex items-center space-x-6 pt-4 border-t border-neutral-100">

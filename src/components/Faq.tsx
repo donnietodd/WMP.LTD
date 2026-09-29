@@ -24,7 +24,7 @@ const Faq = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 bg-neutral-75">
+    <section id="faq" className="py-20 bg-neutral-75 scroll-mt-20">
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-light text-primary mb-12 text-center">
           Frequently asked questions

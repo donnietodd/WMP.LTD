@@ -113,7 +113,7 @@ const Contact = () => {
     setCaptcha(prev => ({ ...prev, answer: e.target.value }));
   };
   return (
-    <section id="contact" className="py-20 bg-neutral-75">
+    <section id="contact" className="py-20 bg-neutral-75 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* CTA Header */}
         <div className="text-center mb-16">

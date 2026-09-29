@@ -7,7 +7,7 @@ const Overseas = () => {
   };
 
   return (
-    <section className="relative py-28 md:py-32 overflow-hidden">
+    <section id="overseas" className="relative py-28 md:py-32 overflow-hidden scroll-mt-20">
       <div className="absolute inset-0 z-0">
         <img
           src="/indonesia-property.jpg"
